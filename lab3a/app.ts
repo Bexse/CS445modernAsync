@@ -13,7 +13,7 @@ let a:number[] = [17, 9, 4, 82, 15, 36];
 let b:number[] = [9, 4, 1, 7, 2, 3, 5, 8, 10, 6];
 
 let result = calcAverage(a);
-let result2 = calcAverages(b);
+let result2 = calcAverage(b);
 console.log(result);
 console.log(result2);
 
