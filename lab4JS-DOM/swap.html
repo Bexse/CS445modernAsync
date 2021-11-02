@@ -8,51 +8,24 @@
 </head>
 <body>
     <div class = "container" >
-        <h3>Swap a pictures </h3>
+        <h3>Swap pictures </h3>
         <img src="img1.jpeg" alt="" id="img1"> 
         <img src="img2.jpeg" alt="" id="img2" > <br>
    </div>
    <input type="button" value ="Swap" id=
     "swap" style= "background-color:rgb(94, 248, 158); text-align:center" > <br>
-    <div style="padding: 20px;"> 
-            <label>Input one: </label>
+<h3 style ="margin-top:30px">Sum of numbers</h3>
+    <form style= "margin-top:25px">
+            <label style= "margin-top:2px">Input one: </label> <br>
             <input type="number" name="" id="num1"> <br>
-            <label>Input two: </label>
+            <label style= "margin-top:2px">Input two: </label> <br>
             <input type="number" name="" id="num2" style ="margin-left:2px"><br>
-            <label>Output: </label>
+            <label style= "margin-top:2px">Output: </label> <br>
             <input type="text" name="" id="result"style ="margin-left:2px"><br>
-            <input type="button" value ="Clik me" id="btn"><br>
+            <input type="button" value ="Clik me" id="btn" style= "margin-top:2px"><br>
 
-    </div>
+  </form>
 
-
-<script>
-    
-     let swap = document.getElementById("swap");
-     swap.addEventListener("click", swapPictures);
-
-    function swapPictures(){
-        let val1 = document.getElementById("img1");
-        let val2 = document.getElementById("img2");
-        val1.src = "img2.jpeg";
-        val2.src = "img1.jpeg";
- 
-    }
-
-    let btn =  document.getElementById("btn");
-    btn.addEventListener("click", sum);
-
-    function sum(){
-        let num1 = document.getElementById("num1");
-        let num2 = document.getElementById("num2");
-        let output = document.getElementById("result");
-        let x = num1.value, y = num2.value;
-        output.value = Number(x) + Number(y);
-        num1.value = "";
-        num2.value = "";
-   
-    }
-</script>
-
+<script type="text/javascript" src="swap.js"> </script>
 </body>
 </html>  
