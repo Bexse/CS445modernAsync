@@ -4,7 +4,7 @@ const shoppingCart = (function (){
     return {
         upsertItem: function(item){
             const index = basket.findIndex(basketItem =>basketItem.id === item.id);
-            if (index > -1){
+            if (index >=0){
                 basket[index] = item
             }
 
